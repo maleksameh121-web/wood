@@ -1,219 +1,449 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171008">
-  <meta name="description" content="مالك للأخشاب الفاخرة — تشكيلة مختارة من الأخشاب الطبيعية وخدمة استفسار سهلة وسريعة.">
-  <title>مالك للأخشاب الفاخرة | جودة تدوم</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17120e">
+  <meta name="description" content="SM Furniture — سمير ومالك للأثاث والتشطيبات. موبيليا، مطابخ، أبواب وشبابيك بتصميمات واقعية وصور مناسبة لكل منتج.">
+  <title>SM Furniture | سمير ومالك للأثاث والتشطيبات</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#171008;--bg2:#24180d;--panel:#302113;--gold:#d7ad60;--gold2:#f0d69b;--cream:#f8f2e8;--ink:#302316;--muted:#b9a78e;--line:rgba(215,173,96,.23);--radius:24px;--shadow:0 22px 60px rgba(0,0,0,.22)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--cream);line-height:1.8}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}.font-amiri{font-family:'Amiri',serif}.section{padding:92px 0}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:.9rem;font-weight:700;letter-spacing:.04em}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}.section-title{font:700 clamp(2.1rem,4vw,3.4rem)/1.25 'Amiri',serif;margin:12px 0;color:inherit}.section-intro{max-width:650px;color:var(--muted);margin:0 auto}.center{text-align:center}.gold-text{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:999px;padding:13px 25px;font-weight:800;cursor:pointer;transition:.25s ease}.btn-primary{background:linear-gradient(120deg,var(--gold2),var(--gold));color:#211609;box-shadow:0 10px 30px #d7ad6022}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 35px #d7ad6038}.btn-outline{border-color:var(--gold);color:var(--gold);background:transparent}.btn-outline:hover{background:#d7ad6015;transform:translateY(-2px)}
-  /* Navigation */
-    .navbar{position:fixed;inset:0 0 auto;z-index:20;border-bottom:1px solid transparent;transition:.25s}.navbar.scrolled{background:#171008ed;backdrop-filter:blur(14px);border-color:var(--line);box-shadow:0 10px 35px #0002}.nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;min-width:max-content}.brand-mark{width:44px;height:44px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,var(--gold2),#9a6d2d);color:#211609;box-shadow:0 7px 22px #d7ad6025}.brand-mark svg{width:25px;height:25px}.brand-name{font:700 1.55rem 'Amiri',serif;color:var(--gold)}.nav-links{display:flex;align-items:center;gap:clamp(16px,2.5vw,32px);color:#eee3d2;font-weight:600}.nav-links a{transition:color .2s}.nav-links a:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:10px}.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold);border-radius:12px;padding:9px;cursor:pointer}.mobile-panel{display:none}
-  /* Hero */
-    .hero{min-height:760px;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 45%,#68451f55 0,transparent 38%),linear-gradient(135deg,#171008,#2b1b0c 55%,#171008)}.hero:before{content:"";position:absolute;inset:0;opacity:.2;background:repeating-linear-gradient(90deg,transparent 0 5px,#b98b4c0b 5px 7px)}.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #d7ad6029;border-radius:50%;left:-150px;bottom:-240px;box-shadow:0 0 0 45px #d7ad6007,0 0 0 90px #d7ad6005}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:55px;padding-top:105px;padding-bottom:70px}.hero-copy{max-width:720px}.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:#d7ad6010;color:var(--gold2);padding:7px 15px;border-radius:999px;font-size:.9rem;font-weight:700}.pill-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #d7ad6017}.hero h1{font:700 clamp(3rem,6.2vw,5.7rem)/1.12 'Amiri',serif;margin:24px 0 20px;letter-spacing:-.02em}.hero h1 span{color:var(--gold)}.hero p{color:#c9b99f;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:650px;margin:0 0 30px}.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:35px;color:#c8b89f;font-size:.92rem}.hero-note span{display:flex;align-items:center;gap:8px}.check{color:var(--gold);font-weight:900}.hero-art{min-height:390px;position:relative;display:grid;place-items:center}.wood-card{position:relative;width:min(100%,390px);aspect-ratio:4/5;border-radius:190px 190px 26px 26px;padding:13px;background:linear-gradient(145deg,#e1bd79,#805321 40%,#d3a65b 70%,#4d3017);box-shadow:0 35px 80px #0005;transform:rotate(3deg)}.wood-inner{height:100%;border-radius:180px 180px 18px 18px;overflow:hidden;position:relative;background:repeating-linear-gradient(7deg,#5b381b 0 5px,#684322 6px 10px,#3c2615 11px 13px,#76502b 14px 17px);border:1px solid #f3d89b77}.wood-inner:before,.wood-inner:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 24px,#e6bc7140 25px,#2818084c 27px,transparent 31px);mix-blend-mode:screen}.wood-inner:after{inset:15% 20%;border:1px solid #f3d89b55;border-radius:50%;background:repeating-radial-gradient(ellipse at 40% 50%,transparent 0 10px,#f0c57b4c 11px 12px,transparent 13px 20px);opacity:.8}.floating-label{position:absolute;background:#24180df0;border:1px solid var(--line);border-radius:18px;padding:13px 17px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}.floating-label strong{display:block;color:var(--gold2);font-size:1.1rem}.floating-label small{color:#c6b49a}.label-one{right:-12px;top:60px}.label-two{left:-18px;bottom:55px}
-  /* Features */
-    .features{background:var(--cream);color:var(--ink);padding:35px 0}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{display:flex;align-items:center;gap:15px;padding:17px 20px;border-left:1px solid #e7dac6}.feature:last-child{border-left:0}.feature-icon{flex:0 0 48px;width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#d7ad6025;color:#875a22}.feature-icon svg{width:25px;height:25px}.feature h3{margin:0 0 3px;font-size:1.08rem}.feature p{margin:0;color:#76634c;font-size:.92rem}
-  /* Products */
-    .products{background:linear-gradient(180deg,#26190d,#171008)}.section-head{margin-bottom:42px}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(150deg,#342315,#24170b);transition:transform .3s,border-color .3s,box-shadow .3s}.product-card:hover{transform:translateY(-7px);border-color:#d7ad6080;box-shadow:0 25px 55px #0003}.product-visual{height:225px;position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(ellipse at center,#8e6137,#4a2e17 70%)}.product-visual:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(95deg,transparent 0 14px,#f3d08a1c 15px 17px,#1b100b22 18px 20px)}.wood-swatch{width:58%;height:78%;border:1px solid #f3d08a70;border-radius:8px;box-shadow:10px 12px 0 #1d100a55,0 18px 30px #0003;position:relative;background:repeating-linear-gradient(3deg,#98673a 0 5px,#6d4525 6px 9px,#b7834b 10px 12px,#523319 13px 15px)}.wood-swatch:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 19px,#f2ce8b30 20px 21px,transparent 22px 35px)}.oak{background:repeating-linear-gradient(3deg,#b78952 0 5px,#8b5c31 6px 9px,#d0a66a 10px 12px,#70451f 13px 15px)}.beech{background:repeating-linear-gradient(3deg,#d1a574 0 5px,#a97848 6px 9px,#e0bc8c 10px 12px,#8b5b34 13px 15px)}.walnut{background:repeating-linear-gradient(3deg,#765035 0 5px,#4c2d1c 6px 9px,#986b49 10px 12px,#392214 13px 15px)}.mahogany{background:repeating-linear-gradient(3deg,#9d5038 0 5px,#713522 6px 9px,#b76b4c 10px 12px,#54291d 13px 15px)}.cedar{background:repeating-linear-gradient(3deg,#c18b58 0 5px,#916039 6px 9px,#d6a56e 10px 12px,#704627 13px 15px)}.teak{background:repeating-linear-gradient(3deg,#a8753f 0 5px,#6d4725 6px 9px,#c19356 10px 12px,#4f321c 13px 15px)}.tag{position:absolute;top:15px;right:15px;border-radius:999px;background:var(--gold);color:#24170b;font-size:.78rem;font-weight:800;padding:5px 12px}.product-content{padding:22px}.product-content h3{font:700 1.7rem 'Amiri',serif;margin:0 0 7px}.product-content p{color:#c5b296;margin:0 0 18px;min-height:55px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:15px;border-top:1px solid #d7ad6022}.price{font-weight:800;color:var(--gold2)}.price small{display:block;font-size:.75rem;color:#a99578;font-weight:500}.ask-btn{width:43px;height:43px;flex:0 0 43px;border:0;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#201508;cursor:pointer;transition:.2s}.ask-btn:hover{transform:translateX(-3px) scale(1.05)}.ask-btn svg{width:21px;height:21px}
-  /* About */
-    .about{background:var(--cream);color:var(--ink)}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.about .section-title{color:var(--ink)}.about-copy p{color:#715e48;font-size:1.08rem}.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.stat{padding:15px 8px;text-align:center;border:1px solid #e4d5be;border-radius:16px}.stat strong{display:block;font:700 2rem 'Amiri',serif;color:#986b2d}.stat span{font-size:.83rem;color:#76634c}.about-visual{position:relative;min-height:400px;border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#382414,#1b1108);padding:26px;box-shadow:var(--shadow)}.about-visual:before{content:"";position:absolute;inset:18px;border:1px solid #d7ad6055;border-radius:22px}.about-visual-inner{height:100%;min-height:348px;border-radius:20px;background:repeating-linear-gradient(7deg,#704824 0 7px,#98683b 8px 13px,#4b2e18 14px 18px);display:grid;place-items:center;position:relative;overflow:hidden}.about-visual-inner:before{content:"";position:absolute;width:260px;height:260px;border:1px solid #f0d69b66;border-radius:50%;box-shadow:0 0 0 25px #d7ad6010,0 0 0 50px #d7ad600a}.about-stamp{position:relative;text-align:center;border:1px solid #f0d69b99;border-radius:50%;width:180px;height:180px;display:grid;place-content:center;color:var(--gold2);background:#21150880;box-shadow:0 12px 40px #0004}.about-stamp strong{font:700 2.2rem 'Amiri',serif}.about-stamp span{font-size:.8rem;letter-spacing:.1em}
-  /* Contact */
-    .contact{background:radial-gradient(ellipse at 15% 70%,#5a391a33,transparent 40%),var(--bg)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.contact-info{display:grid;gap:14px;align-content:start}.contact-item{display:flex;gap:15px;padding:19px;border:1px solid var(--line);border-radius:18px;background:#ffffff04}.contact-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:14px;background:#d7ad6018;color:var(--gold)}.contact-icon svg{width:23px;height:23px}.contact-item h3{margin:0 0 3px;color:var(--gold2);font-size:1.05rem}.contact-item p{margin:0;color:#c7b69c}.contact-form{padding:30px;border:1px solid var(--line);border-radius:26px;background:#2a1b0d99}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field.full{grid-column:1/-1}.field label{display:block;color:var(--gold2);font-weight:700;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #d7ad6040;background:#160e07;color:var(--cream);padding:13px 15px;border-radius:12px;outline:none;transition:border .2s}.field input:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{resize:vertical;min-height:130px}.field input::placeholder,.field textarea::placeholder{color:#8d7a60}.form-note{color:#aa987e;font-size:.85rem;margin:13px 0 18px}.form-message{display:none;margin-top:15px;padding:12px 14px;border:1px solid #5d9d6d66;background:#24552d30;color:#c9efce;border-radius:12px}.form-message.show{display:block}
-  /* Footer */
-    footer{background:#0d0905;border-top:1px solid #d7ad6018;padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-copy{color:#9c896e;font-size:.88rem}.socials{display:flex;gap:9px}.social-link{width:39px;height:39px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--gold);transition:.2s}.social-link:hover{background:var(--gold);color:#211609}.social-link svg{width:18px;height:18px}.toast{position:fixed;bottom:22px;left:22px;z-index:50;max-width:min(380px,calc(100% - 44px));padding:14px 18px;border:1px solid var(--line);border-radius:15px;background:#211609;color:var(--cream);box-shadow:var(--shadow);opacity:0;transform:translateY(12px);pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translateY(0)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:900px){.nav-links,.nav-actions .btn{display:none}.menu-btn{display:inline-grid;place-items:center}.mobile-panel{position:absolute;top:81px;inset-inline:0;padding:12px 20px 20px;background:#171008f7;border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}.mobile-panel.open{display:grid;gap:4px}.mobile-panel a{padding:10px 12px;border-radius:10px;color:#eee3d2}.mobile-panel a:hover{background:#d7ad6014;color:var(--gold)}.hero-grid{grid-template-columns:1fr .7fr;gap:25px}.hero-art{min-height:310px}.wood-card{width:min(100%,300px)}.label-one{right:-5px}.label-two{left:-4px}.product-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.contact-grid{gap:25px}}
-    @media(max-width:650px){.container{width:min(100% - 30px,520px)}.section{padding:68px 0}.nav-inner{height:72px}.brand-mark{width:40px;height:40px}.brand-name{font-size:1.35rem}.mobile-panel{top:71px}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding-top:125px;padding-bottom:90px;text-align:center}.hero-copy{margin:auto}.hero h1{font-size:clamp(2.8rem,13vw,4.2rem)}.hero p{font-size:1rem}.hero-buttons{justify-content:center}.hero-note{justify-content:center;gap:10px 17px}.hero-art{min-height:320px;margin-top:5px}.wood-card{width:245px;aspect-ratio:4/4.4}.label-one{top:25px;right:2px}.label-two{bottom:25px;left:0}.features{padding:20px 0}.feature-grid{grid-template-columns:1fr;gap:0}.feature{border-left:0;border-bottom:1px solid #e7dac6;padding:14px 4px}.feature:last-child{border-bottom:0}.product-grid{grid-template-columns:1fr;gap:17px}.product-visual{height:210px}.product-content p{min-height:0}.about-grid,.contact-grid{grid-template-columns:1fr}.about-grid{gap:30px}.about-visual{min-height:320px}.about-visual-inner{min-height:268px}.about-stats{gap:7px}.stat strong{font-size:1.65rem}.stat span{font-size:.75rem}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-form{padding:20px}.footer-inner{justify-content:center;text-align:center;flex-direction:column}.section-title{font-size:2.5rem}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    :root{
+      --bg:#16120f;
+      --bg-soft:#211914;
+      --panel:#251d17;
+      --panel-2:#2d241d;
+      --gold:#d7ad69;
+      --gold-soft:#f0d8a5;
+      --cream:#f6f1e8;
+      --ink:#30261f;
+      --sub:#c9b9a9;
+      --sub-dark:#78695c;
+      --line:rgba(255,255,255,.11);
+      --shadow:0 18px 44px rgba(0,0,0,.28);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;font-family:Cairo,sans-serif;background:var(--bg);color:var(--cream)}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,textarea{font:inherit}
+    button{cursor:pointer}
+    .wrap{width:min(1220px,calc(100% - 34px));margin:auto}
+
+    .nav{position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(22,18,15,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(215,173,105,.17)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:82px}
+    .brand{display:flex;align-items:center;gap:14px;min-width:max-content}
+    .brand-mark{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#e8c98a,#c18c3b);box-shadow:0 12px 28px rgba(215,173,105,.22)}
+    .brand-mark svg{width:34px;height:34px}
+    .brand-text{display:flex;flex-direction:column;line-height:1.1}
+    .brand-text strong{font:700 1.42rem 'Playfair Display',serif;letter-spacing:1.4px;color:var(--gold)}
+    .brand-text span{font-size:.76rem;color:#dec9ad;font-weight:700}
+    .links{display:flex;align-items:center;gap:28px;font-size:.92rem;font-weight:800}
+    .links a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:13px;font-weight:800;border:1px solid transparent;transition:.24s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:var(--gold);color:#21170e}
+    .btn.outline{background:rgba(23,18,14,.55);color:var(--gold);border-color:rgba(215,173,105,.6)}
+    .nav-cta{white-space:nowrap}
+    .menu{display:none;border:1px solid rgba(215,173,105,.45);background:transparent;color:var(--gold);border-radius:10px;padding:7px 13px;font-size:1.24rem}
+    .mobile{display:none}
+
+    .hero{position:relative;min-height:760px;display:grid;align-items:center;overflow:hidden;background:
+      linear-gradient(90deg,rgba(22,18,15,.96) 3%,rgba(22,18,15,.88) 42%,rgba(22,18,15,.42) 100%),
+      url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=85') center/cover}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 24%,rgba(215,173,105,.12),transparent 22%)}
+    .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:210px;background:linear-gradient(transparent,var(--bg))}
+    .hero-content{position:relative;z-index:1;padding-top:120px;padding-bottom:100px}
+    .tagline{display:inline-flex;align-items:center;gap:9px;border-radius:50px;padding:8px 16px;background:rgba(22,18,15,.55);border:1px solid rgba(215,173,105,.35);font-weight:700;font-size:.84rem;color:var(--gold)}
+    .tagline::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+    .hero h1{font-size:clamp(2.7rem,5.4vw,5.4rem);line-height:1.37;margin:18px 0 16px;max-width:760px}
+    .hero h1 span{color:var(--gold)}
+    .hero p{max-width:700px;margin:0 0 28px;color:#e0cfbf;font-size:clamp(1rem,1.8vw,1.2rem);line-height:2}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .mini-features{display:flex;gap:16px 24px;flex-wrap:wrap;margin-top:30px;color:#e9d7bd;font-weight:700;font-size:.88rem}
+    .mini-features b{color:var(--gold)}
+
+    .features{background:var(--cream);color:var(--ink);padding:26px 0}
+    .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .feature{display:flex;align-items:center;gap:14px;padding:14px 10px}
+    .feature-icon{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:#edddc7;color:#8a5b29;font-size:1.35rem;flex-shrink:0}
+    .feature strong{display:block;font-size:.96rem}
+    .feature span:last-child{display:block;color:var(--sub-dark);font-size:.84rem;line-height:1.7}
+
+    .section{padding:88px 0}
+    .section-head{text-align:center;margin-bottom:38px}
+    .eyebrow{display:inline-block;color:var(--gold);font-size:.84rem;font-weight:800;letter-spacing:1px}
+    .section h2{font-size:clamp(2rem,3.7vw,3rem);margin:8px 0 12px}
+    .section-head p{max-width:720px;margin:auto;color:var(--sub);line-height:2}
+    .filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+    .filter{background:var(--panel-2);color:#e7dbcf;border:1px solid rgba(215,173,105,.18);border-radius:30px;padding:9px 20px;font-weight:800}
+    .filter.active,.filter:hover{background:var(--gold);color:#23180e}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .card{background:var(--panel);border:1px solid rgba(215,173,105,.16);border-radius:var(--radius);overflow:hidden;transition:.28s ease;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+    .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(215,173,105,.48)}
+    .card[hidden]{display:none}
+    .photo{position:relative;height:250px;background:#4a3524;overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+    .card:hover .photo img{transform:scale(1.06)}
+    .category{position:absolute;top:14px;right:14px;border:1px solid rgba(255,255,255,.2);background:rgba(17,13,10,.84);color:var(--gold-soft);padding:5px 12px;border-radius:22px;font-size:.76rem;font-weight:800}
+    .body{padding:22px}
+    .body h3{margin:0 0 8px;font-size:1.18rem}
+    .body p{margin:0 0 17px;color:var(--sub);line-height:1.9;font-size:.89rem;min-height:68px}
+    .card-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:15px;border-top:1px solid var(--line)}
+    .small-note{font-size:.78rem;color:#dcc08d;font-weight:700}
+    .ask{border:0;background:var(--gold);color:#22170e;padding:10px 15px;border-radius:10px;font-weight:800}
+
+    .about{background:var(--cream);color:var(--ink)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+    .about p{color:#716152;line-height:2.05}
+    .about-photo{height:430px;border-radius:24px;overflow:hidden;box-shadow:18px 18px 0 #dcc19a}
+    .about-photo img{width:100%;height:100%;object-fit:cover}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px}
+    .badges span{padding:9px 14px;border-radius:999px;background:#ecddca;color:#734a22;font-size:.82rem;font-weight:800}
+
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px}
+    .info-box,.form{background:var(--panel);border:1px solid rgba(215,173,105,.18);border-radius:20px}
+    .info-box{padding:20px;margin-bottom:14px}
+    .info-box strong{display:block;color:var(--gold);margin-bottom:6px}
+    .info-box p{margin:0;color:var(--sub);line-height:1.9}
+    .info-box a{text-decoration:underline;text-underline-offset:4px}
+    .form{padding:28px}
+    .inputs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field.full{grid-column:1 / -1}
+    .field label{display:block;margin-bottom:8px;color:#f1d6a7;font-size:.88rem;font-weight:800}
+    .field input,.field textarea{width:100%;padding:12px 13px;border-radius:11px;border:1px solid rgba(215,173,105,.28);background:#17120f;color:#fff;outline:none}
+    .field input:focus,.field textarea:focus{border-color:var(--gold)}
+    .field textarea{min-height:130px;resize:vertical}
+    .form .btn{width:100%;margin-top:16px}
+    .hint{margin:11px 0 0;color:var(--sub);font-size:.8rem;line-height:1.8}
+    .hidden-msg{display:none;color:#bde2c0;margin-top:12px}.hidden-msg.show{display:block}
+
+    .footer{background:#100c09;border-top:1px solid rgba(215,173,105,.15);padding:28px 0}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .footer p{margin:0;color:var(--sub);font-size:.82rem}
+    .footer-brand .brand-mark{width:42px;height:42px;border-radius:13px}.footer-brand .brand-mark svg{width:28px;height:28px}
+    .footer-brand .brand-text strong{font-size:1.06rem}.footer-brand .brand-text span{font-size:.67rem}
+    .wa-float{position:fixed;left:18px;bottom:18px;z-index:30;background:#25d366;color:#112617;padding:11px 18px;border-radius:999px;font-weight:800;box-shadow:0 16px 30px rgba(0,0,0,.28)}
+
+    @media (max-width:980px){
+      .links,.nav-cta{display:none}
+      .menu{display:block}
+      .mobile.open{display:grid;gap:5px;padding:12px 18px 18px;background:#17120f;border-top:1px solid rgba(215,173,105,.12)}
+      .mobile a{padding:10px 12px;border-radius:10px}
+      .mobile a:hover{background:rgba(215,173,105,.1)}
+      .feature-grid{grid-template-columns:repeat(2,1fr)}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .about-grid,.contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:680px){
+      .wrap{width:calc(100% - 28px)}
+      .nav-inner{height:72px}
+      .brand-mark{width:46px;height:46px}.brand-mark svg{width:30px;height:30px}
+      .brand-text strong{font-size:1.2rem}
+      .hero{min-height:710px;background-position:63% center}
+      .hero-content{padding-top:108px;padding-bottom:82px}
+      .hero h1{font-size:2.6rem}
+      .feature-grid,.grid,.inputs{grid-template-columns:1fr}
+      .section{padding:68px 0}
+      .photo{height:238px}
+      .about-photo{height:290px;box-shadow:11px 11px 0 #dcc19a}
+      .field.full{grid-column:auto}
+      .footer-inner{justify-content:center;text-align:center}
+      .wa-float{left:12px;bottom:12px;font-size:.8rem;padding:10px 15px}
+    }
+    @media (prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="مالك للأخشاب الفاخرة - الرئيسية">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2.5 7v10L12 22l9.5-5V7L12 2Zm0 2.5L17.8 7.5 12 10.6 6.2 7.5 12 4.5ZM4.5 9.2l6.5 3.4v6.4l-6.5-3.4V9.2Zm15 6.4L13 19v-6.4l6.5-3.4v6.4Z"/></svg></span>
-        <span class="brand-name">مالك للأخشاب</span>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="SM Furniture الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#g)"/>
+            <path d="M17 24c0-4.4 3.6-8 8-8h16c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H25c-4.4 0-8-3.6-8-8V24Z" fill="#2A1B0D" opacity=".18"/>
+            <path d="M22 23h5.5c5.3 0 8.4 2.3 8.4 6.1 0 2.5-1.5 4.4-4 5.3l5.6 7.6h-6.2l-4.7-6.5H27V42h-5V23Zm5 8.4h.8c2 0 3.2-.8 3.2-2.3 0-1.4-1.1-2.1-3.1-2.1H27v4.4Z" fill="#F9E6B8"/>
+            <path d="M40 23h12v4h-7v3.4h6.5v3.8H45V42h-5V23Z" fill="#F9E6B8"/>
+            <defs><linearGradient id="g" x1="9" y1="8" x2="57" y2="57" gradientUnits="userSpaceOnUse"><stop stop-color="#F4D9A2"/><stop offset="1" stop-color="#B67C2E"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>SM Furniture</strong><span>سمير ومالك للأثاث والتشطيبات</span></span>
       </a>
-      <nav class="nav-links" aria-label="التنقل الرئيسي">
-        <a href="#home">الرئيسية</a><a href="#products">منتجاتنا</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+
+      <nav class="links" aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
       </nav>
-      <div class="nav-actions"><a class="btn btn-primary" href="#contact">اطلب واستفسر</a><button class="menu-btn" id="menu-btn" aria-label="فتح القائمة" aria-expanded="false"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+
+      <a class="btn primary nav-cta" href="#contact">اطلب تصميمك ←</a>
+      <button type="button" class="menu" id="menu" aria-label="فتح القائمة" aria-expanded="false">☰</button>
     </div>
-    <nav class="mobile-panel" id="mobile-panel" aria-label="قائمة الهاتف"><a href="#home">الرئيسية</a><a href="#products">منتجاتنا</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a></nav>
+    <nav id="mobile" class="mobile" aria-label="قائمة الهاتف">
+      <a href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="pill"><span class="pill-dot"></span> جودة نختارها بعناية</span>
-          <h1>للخشب حكاية…<br><span>والجودة عنوانها</span></h1>
-          <p>اكتشف تشكيلة من الأخشاب الطبيعية التي تجمع بين جمال المظهر وقوة الاستخدام، مع اهتمام بالتفاصيل وخدمة تساعدك تختار الأنسب لمشروعك.</p>
-          <div class="hero-buttons"><a class="btn btn-primary" href="#products">اكتشف منتجاتنا <span aria-hidden="true">←</span></a><a class="btn btn-outline" href="#contact">تواصل معنا</a></div>
-          <div class="hero-note"><span><b class="check">✓</b> اختيارات متنوعة</span><span><b class="check">✓</b> مساعدة في الاختيار</span><span><b class="check">✓</b> اهتمام بالجودة</span></div>
+      <div class="wrap hero-content">
+        <span class="tagline">SM Furniture • Real Design • تشطيب أنيق</span>
+        <h1>موبيليا ومطابخ وأبواب وشبابيك<br><span>بصور واقعية ولمسة احترافية</span></h1>
+        <p>استعرض مجموعة كبيرة من النماذج الواقعية المناسبة للبيت: انتريهات، غرف نوم، مطابخ، أبواب وشبابيك. ولو عجبك أي موديل، ابعت لنا التفاصيل على واتساب ونساعدك في التنفيذ.</p>
+        <div class="actions">
+          <a class="btn primary" href="#products">شوف المنتجات ←</a>
+          <a class="btn outline" href="https://wa.me/201154015353" target="_blank" rel="noopener">كلّمنا على واتساب</a>
         </div>
-        <div class="hero-art" aria-label="تصميم زخرفي مستوحى من عروق الخشب">
-          <div class="wood-card"><div class="wood-inner"></div></div>
-          <div class="floating-label label-one"><strong>تفاصيل طبيعية</strong><small>لكل نوع طابعه الخاص</small></div>
-          <div class="floating-label label-two"><strong>اختيارك يبدأ هنا</strong><small>اسألنا عن المتاح</small></div>
+        <div class="mini-features">
+          <span><b>✓</b> صور واقعية</span>
+          <span><b>✓</b> موديلات متنوعة</span>
+          <span><b>✓</b> تنفيذ حسب الطلب</span>
+          <span><b>✓</b> استفسار سريع</span>
         </div>
       </div>
     </section>
 
-    <section class="features" aria-label="مميزاتنا">
-      <div class="container feature-grid">
-        <article class="feature"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span><div><h3>اهتمام بالجودة</h3><p>اختيارات تراعي طبيعة الاستخدام والتشطيب.</p></div></article>
-        <article class="feature"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>خبرة في الاختيار</h3><p>نساعدك تتعرف على الفروق بين الأنواع.</p></div></article>
-        <article class="feature"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="17.5" cy="19" r="1.5"/></svg></span><div><h3>خدمة مرنة</h3><p>تواصل معنا لمعرفة خيارات التوريد والتوصيل.</p></div></article>
+    <section class="features">
+      <div class="wrap feature-grid">
+        <div class="feature"><span class="feature-icon">🛋️</span><div><strong>موبيليا متنوعة</strong><span>انتريهات، غرف نوم، سفرة ووحدات ديكور</span></div></div>
+        <div class="feature"><span class="feature-icon">🍽️</span><div><strong>مطابخ عملية</strong><span>مودرن وكلاسيك مع أفكار للتخزين</span></div></div>
+        <div class="feature"><span class="feature-icon">🚪</span><div><strong>أبواب أنيقة</strong><span>داخلية ومداخل بتفاصيل مناسبة للبيت</span></div></div>
+        <div class="feature"><span class="feature-icon">🪟</span><div><strong>شبابيك عصرية</strong><span>موديلات توازن بين الشكل والاستخدام</span></div></div>
       </div>
     </section>
 
-    <section class="section products" id="products">
-      <div class="container">
-        <div class="section-head center reveal"><span class="eyebrow">تشكيلة الأخشاب</span><h2 class="section-title">اختيارات تناسب مشروعك</h2><p class="section-intro">تعرّف على بعض الأنواع الشائعة، وتواصل معنا لتأكيد التوافر والمقاسات والسعر الحالي قبل الطلب.</p></div>
-        <div class="product-grid">
-          <article class="product-card reveal"><div class="product-visual"><span class="wood-swatch oak"></span></div><div class="product-content"><h3>خشب البلوط</h3><p>عروق واضحة ومظهر أنيق، مناسب للأثاث والتصميمات الكلاسيكية.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب البلوط" aria-label="استفسر عن خشب البلوط"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
-          <article class="product-card reveal"><span class="tag">اختيار شائع</span><div class="product-visual"><span class="wood-swatch beech"></span></div><div class="product-content"><h3>خشب الزان</h3><p>لون دافئ وملمس متجانس، يُستخدم في العديد من أعمال النجارة.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب الزان" aria-label="استفسر عن خشب الزان"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
-          <article class="product-card reveal"><div class="product-visual"><span class="wood-swatch walnut"></span></div><div class="product-content"><h3>خشب الجوز</h3><p>درجات بنية غنية تمنح الأثاث لمسة راقية ومميزة.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب الجوز" aria-label="استفسر عن خشب الجوز"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
-          <article class="product-card reveal"><div class="product-visual"><span class="wood-swatch mahogany"></span></div><div class="product-content"><h3>خشب الماهوجني</h3><p>لون مائل للأحمر ومظهر غني يناسب قطع الأثاث المميزة.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب الماهوجني" aria-label="استفسر عن خشب الماهوجني"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
-          <article class="product-card reveal"><div class="product-visual"><span class="wood-swatch cedar"></span></div><div class="product-content"><h3>خشب الأرز</h3><p>خشب معروف برائحته الطبيعية وملاءمته لاستخدامات متنوعة.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب الأرز" aria-label="استفسر عن خشب الأرز"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
-          <article class="product-card reveal"><span class="tag">للاستخدامات الخارجية</span><div class="product-visual"><span class="wood-swatch teak"></span></div><div class="product-content"><h3>خشب التيك</h3><p>من الأنواع المعروفة بملاءمتها لعدد من التطبيقات الخارجية.</p><div class="product-bottom"><span class="price">السعر حسب الطلب<small>يتحدد وفق المقاس والجودة</small></span><button class="ask-btn" data-product="خشب التيك" aria-label="استفسر عن خشب التيك"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div></article>
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">SM FURNITURE COLLECTION</span>
+          <h2>منتجاتنا وتصميماتنا</h2>
+          <p>اختر من بين مجموعة أكبر من المنتجات المعروضة بصور واقعية ومناسبة لكل نوع شغل. اضغط «استفسر» لإرسال اسم المنتج مباشرة داخل نموذج التواصل.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="تصفية المنتجات">
+          <button class="filter active" data-filter="all" aria-pressed="true">الكل</button>
+          <button class="filter" data-filter="furniture" aria-pressed="false">موبيليا</button>
+          <button class="filter" data-filter="kitchens" aria-pressed="false">مطابخ</button>
+          <button class="filter" data-filter="doors" aria-pressed="false">أبواب</button>
+          <button class="filter" data-filter="windows" aria-pressed="false">شبابيك</button>
+        </div>
+
+        <div class="grid">
+          <article class="card" data-category="furniture">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="انتريه وغرفة معيشة مودرن"><span class="category">موبيليا</span></div>
+            <div class="body"><h3>انتريهات وغرف معيشة</h3><p>تصميمات مودرن لفرش غرفة المعيشة مع توزيع مريح ولمسة أنيقة تناسب البيت الحديث.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="انتريهات وغرف معيشة">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="furniture">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80" alt="غرفة نوم بتصميم أنيق"><span class="category">موبيليا</span></div>
+            <div class="body"><h3>غرف نوم</h3><p>نماذج لغرف نوم هادئة وعملية تناسب المساحات المختلفة وتجمع بين الراحة والترتيب.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="غرف نوم">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="furniture">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="وحدة تلفزيون ومكتبة"><span class="category">موبيليا</span></div>
+            <div class="body"><h3>مكتبات ووحدات تلفزيون</h3><p>وحدات عرض وتخزين تضيف شكل منظم ولمسة جمالية في الريسبشن أو غرفة المعيشة.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="مكتبات ووحدات تلفزيون">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="furniture">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="غرفة سفرة وطاولة طعام"><span class="category">موبيليا</span></div>
+            <div class="body"><h3>سفرة وطاولات طعام</h3><p>تصميمات لطاولات السفرة والكراسي بأسلوب يضيف فخامة ودفء لمساحة الطعام.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="سفرة وطاولات طعام">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="furniture">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80&sat=-10" alt="مكتب منزلي وركنة عمل"><span class="category">موبيليا</span></div>
+            <div class="body"><h3>مكاتب منزلية ووحدات عملية</h3><p>حلول مناسبة لركن العمل أو الدراسة داخل البيت بتصميم عملي ومنظم.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="مكاتب منزلية ووحدات عملية">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="kitchens">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80" alt="مطبخ مودرن"><span class="category">مطابخ</span></div>
+            <div class="body"><h3>مطابخ مودرن</h3><p>مطابخ بخطوط بسيطة ومساحات تخزين ذكية مع شكل عصري نظيف ومريح في الاستخدام.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="مطابخ مودرن">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="kitchens">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80" alt="مطبخ كلاسيك"><span class="category">مطابخ</span></div>
+            <div class="body"><h3>مطابخ كلاسيك</h3><p>تفاصيل دافئة وتشطيب أنيق لمحبي الشكل الكلاسيكي مع اهتمام بالتقسيم الداخلي.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="مطابخ كلاسيك">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="kitchens">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="مطبخ صغير وعملي"><span class="category">مطابخ</span></div>
+            <div class="body"><h3>مطابخ للمساحات الصغيرة</h3><p>أفكار لاستغلال المساحات الصغيرة بشكل عملي مع توزيع يسهّل الحركة والاستخدام اليومي.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="مطابخ للمساحات الصغيرة">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="doors">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="باب داخلي أنيق"><span class="category">أبواب</span></div>
+            <div class="body"><h3>أبواب داخلية</h3><p>موديلات للأبواب الداخلية بتصميمات متعددة تناسب غرف البيت والديكورات المختلفة.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="أبواب داخلية">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="doors">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="باب مدخل فاخر"><span class="category">أبواب</span></div>
+            <div class="body"><h3>أبواب مداخل</h3><p>أبواب رئيسية تضيف حضور مميز لمدخل البيت مع شكل قوي وأنيق في نفس الوقت.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="أبواب مداخل">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="doors">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="باب جرار داخلي"><span class="category">أبواب</span></div>
+            <div class="body"><h3>أبواب جرّارة</h3><p>أفكار مناسبة للمساحات الحديثة أو الضيقة مع شكل أنيق واستغلال أفضل للمكان.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="أبواب جرّارة">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="windows">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80&sat=-15" alt="شباك عصري بإطار أنيق"><span class="category">شبابيك</span></div>
+            <div class="body"><h3>شبابيك عصرية</h3><p>شبابيك بتصميمات مناسبة للواجهات والغرف مع اهتمام بالشكل العملي ودخول الإضاءة.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="شبابيك عصرية">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="windows">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="شباك كبير بإطلالة داخلية"><span class="category">شبابيك</span></div>
+            <div class="body"><h3>شبابيك بانوراما</h3><p>موديلات للشبابيك الواسعة التي تبرز الإضاءة الطبيعية وتعطي إحساسًا بالاتساع.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="شبابيك بانوراما">استفسر ←</button></div></div>
+          </article>
+
+          <article class="card" data-category="windows">
+            <div class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80&hue=25" alt="شباك بتقسيمات كلاسيك"><span class="category">شبابيك</span></div>
+            <div class="body"><h3>شبابيك بتقسيمات كلاسيك</h3><p>تصميمات تعطي واجهة مميزة وتناسب محبي الطابع الكلاسيكي داخل المنزل.</p><div class="card-bottom"><span class="small-note">التفاصيل والسعر حسب الطلب</span><button class="ask" data-name="شبابيك بتقسيمات كلاسيك">استفسر ←</button></div></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="container about-grid">
-        <div class="about-copy reveal"><span class="eyebrow">قصتنا</span><h2 class="section-title">الاختيار الصح يبدأ من المعلومة</h2><p>في مالك للأخشاب الفاخرة، نؤمن أن اختيار الخشب المناسب خطوة أساسية لنجاح أي مشروع. لذلك نهتم بتوضيح الفروق بين الأنواع ومساعدتك في اختيار ما يناسب احتياجك وميزانيتك.</p><p>سواء كنت بتجهز قطعة أثاث أو بتنفذ مشروع نجارة، تواصل معنا لمعرفة الأنواع المتاحة والمقاسات والتفاصيل قبل اتخاذ قرار الشراء.</p><div class="about-stats"><div class="stat"><strong>تنوع</strong><span>في الأنواع</span></div><div class="stat"><strong>اهتمام</strong><span>بالتفاصيل</span></div><div class="stat"><strong>وضوح</strong><span>في الاستفسارات</span></div></div></div>
-        <div class="about-visual reveal"><div class="about-visual-inner"><div class="about-stamp"><strong>مالك</strong><span>للأخشاب الفاخرة</span></div></div></div>
+      <div class="wrap about-grid">
+        <div>
+          <span class="eyebrow" style="color:#9c6e32">مين إحنا؟</span>
+          <h2>SM Furniture<br>سمير ومالك</h2>
+          <p>SM Furniture هو اسم يجمع بين خبرة عمك سمير واهتمامك بتقديم شغل مرتب وواجهة محترمة للورشة. الموقع ده معمول علشان يعرض الخدمات بشكل واضح وواقعي ويخلّي العميل يوصل بسرعة للحاجة اللي بيدور عليها.</p>
+          <p>إحنا مركزين على الموبيليا والمطابخ والأبواب والشبابيك، مع إمكانية تنفيذ طلبات حسب المقاس والتفاصيل المطلوبة. لو عندك فكرة أو صورة قريبة من ذوقك، ابعتها لنا ونتكلم في المناسب ليك.</p>
+          <div class="badges"><span>موبيليا</span><span>مطابخ</span><span>أبواب</span><span>شبابيك</span><span>تنفيذ حسب الطلب</span></div>
+          <a class="btn primary" href="#contact">احكيلنا عن مشروعك ←</a>
+        </div>
+        <div class="about-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1000&q=85" alt="ديكور داخلي وأثاث راقٍ"></div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-head center reveal"><span class="eyebrow">يسعدنا تواصلك</span><h2 class="section-title">خلّينا نساعدك تختار</h2><p class="section-intro">ابعت تفاصيل طلبك، أو استخدم زر واتساب لفتح رسالة جاهزة وإرسالها مباشرة.</p></div>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">تواصل معنا</span>
+          <h2>عندك فكرة؟ ابعتها لنا</h2>
+          <p>اختار نوع الشغل، واكتب التفاصيل أو المقاسات، وسنجهز لك رسالة واتساب مباشرة على رقم الورشة.</p>
+        </div>
         <div class="contact-grid">
-          <div class="contact-info reveal">
-            <div class="contact-item"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><h3>العنوان</h3><p id="contact-address">القاهرة، مصر — يُضاف العنوان التفصيلي هنا</p></div></div>
-            <div class="contact-item"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.7L7.2 10.2a16 16 0 0 0 6 6l1.8-1.8a2 2 0 0 1 1.7-.6l3 .5a2 2 0 0 1 2.3 2.6Z"/></svg></span><div><h3>الهاتف وواتساب</h3><p><a href="https://wa.me/201154015353" target="_blank" rel="noopener noreferrer" dir="ltr">01154015353</a></p></div></div>
-            <div class="contact-item"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>مواعيد العمل</h3><p>يُرجى التواصل لتأكيد مواعيد العمل والتوافر.</p></div></div>
+          <div>
+            <div class="info-box"><strong>📞 موبايل / واتساب</strong><p><a href="tel:01154015353" dir="ltr">01154015353</a></p><p><a href="https://wa.me/201154015353" target="_blank" rel="noopener">افتح محادثة واتساب ←</a></p></div>
+            <div class="info-box"><strong>📍 الموقع</strong><p>مصر — أضف عنوان الورشة التفصيلي هنا قبل النشر النهائي.</p></div>
+            <div class="info-box"><strong>🛠️ خدماتنا</strong><p>موبيليا، مطابخ، أبواب وشبابيك، وتنفيذ حسب الطلب مع إمكانية مناقشة الخامة والمقاسات.</p></div>
           </div>
-          <form class="contact-form reveal" id="contact-form">
-            <div class="form-grid">
-              <div class="field"><label for="name">الاسم</label><input id="name" name="name" autocomplete="name" placeholder="اكتب اسمك" required></div>
-              <div class="field"><label for="phone">رقم الهاتف</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="رقم يمكن التواصل عليه" required></div>
-              <div class="field full"><label for="product">النوع المطلوب</label><input id="product" name="product" placeholder="مثال: خشب زان، بلوط، أو نوع آخر"></div>
-              <div class="field full"><label for="message">تفاصيل الاستفسار</label><textarea id="message" name="message" placeholder="اكتب المقاسات أو الكمية أو أي تفاصيل مهمة..." required></textarea></div>
+          <form id="contact-form" class="form">
+            <div class="inputs">
+              <div class="field"><label for="name">الاسم</label><input id="name" name="name" required placeholder="اسمك"></div>
+              <div class="field"><label for="phone">رقم الهاتف</label><input id="phone" name="phone" type="tel" required inputmode="tel" placeholder="رقمك للتواصل"></div>
+              <div class="field full"><label for="product">نوع الشغل</label><input id="product" name="product" placeholder="مثال: مطبخ مودرن، أبواب داخلية، غرفة نوم..."></div>
+              <div class="field full"><label for="message">تفاصيل طلبك</label><textarea id="message" name="message" required placeholder="اكتب المقاسات، اللون، التصميم المطلوب أو أي تفاصيل إضافية..."></textarea></div>
             </div>
-            <p class="form-note">ملاحظة: عند الإرسال ستُفتح رسالة الاستفسار على واتساب رقم 01154015353، ويمكنك مراجعتها ثم الضغط على إرسال.</p>
-            <button class="btn btn-primary" type="submit" style="width:100%">إرسال الاستفسار عبر واتساب <span aria-hidden="true">←</span></button>
-            <div class="form-message" id="form-message" role="status"></div>
+            <button class="btn primary" type="submit">إرسال الاستفسار على واتساب ←</button>
+            <p class="hint">بالضغط على الزر سيفتح واتساب برسالتك الجاهزة، والإرسال النهائي يتم من داخل واتساب.</p>
+            <p class="hidden-msg" id="form-status" role="status">إذا لم يُفتح واتساب، اسمح بالنوافذ المنبثقة أو استخدم رابط واتساب الموجود بجانب رقم التواصل.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container footer-inner">
-    <a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2.5 7v10L12 22l9.5-5V7L12 2Z"/></svg></span><span class="brand-name">مالك للأخشاب</span></a>
-    <p class="footer-copy">© <span id="year"></span> مالك للأخشاب الفاخرة — جميع الحقوق محفوظة</p>
-    <div class="socials" aria-label="روابط التواصل">
-      <a class="social-link" href="#contact" aria-label="تواصل معنا"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 4a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.4Z"/></svg></a>
-      <a class="social-link" href="#products" aria-label="منتجاتنا"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M5 7l1 14h12l1-14M9 7V4a3 3 0 0 1 6 0v3"/></svg></a>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand footer-brand" href="#home" aria-label="SM Furniture">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#g2)"/>
+            <path d="M22 23h5.5c5.3 0 8.4 2.3 8.4 6.1 0 2.5-1.5 4.4-4 5.3l5.6 7.6h-6.2l-4.7-6.5H27V42h-5V23Zm5 8.4h.8c2 0 3.2-.8 3.2-2.3 0-1.4-1.1-2.1-3.1-2.1H27v4.4Z" fill="#F9E6B8"/>
+            <path d="M40 23h12v4h-7v3.4h6.5v3.8H45V42h-5V23Z" fill="#F9E6B8"/>
+            <defs><linearGradient id="g2" x1="9" y1="8" x2="57" y2="57" gradientUnits="userSpaceOnUse"><stop stop-color="#F4D9A2"/><stop offset="1" stop-color="#B67C2E"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>SM Furniture</strong><span>سمير ومالك للأثاث والتشطيبات</span></span>
+      </a>
+      <p>© <span id="year"></span> SM Furniture — جميع الحقوق محفوظة</p>
     </div>
-  </div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/201154015353" target="_blank" rel="noopener">واتساب مباشر</a>
+
   <script>
-    // ضع رقم واتساب بصيغة دولية من غير + أو مسافات، مثال مصر: 201XXXXXXXXX
-    const WHATSAPP_NUMBER = "201154015353";
+    const WHATSAPP_NUMBER = '201154015353';
 
-    const navbar = document.getElementById("navbar");
-    const menuBtn = document.getElementById("menu-btn");
-    const mobilePanel = document.getElementById("mobile-panel");
-    const toast = document.getElementById("toast");
-    let toastTimer;
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add("show");
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toast.classList.remove("show"), 3600);
-    }
-
-    function updateNavbar() {
-      navbar.classList.toggle("scrolled", window.scrollY > 24);
-    }
-    window.addEventListener("scroll", updateNavbar, { passive: true });
-    updateNavbar();
-
-    menuBtn.addEventListener("click", () => {
-      const open = mobilePanel.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", String(open));
-      menuBtn.setAttribute("aria-label", open ? "إغلاق القائمة" : "فتح القائمة");
+    const menuBtn = document.getElementById('menu');
+    const mobile = document.getElementById('mobile');
+    menuBtn.addEventListener('click', ()=>{
+      const open = mobile.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
     });
 
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", event => {
-        const target = document.querySelector(link.getAttribute("href"));
-        if (!target) return;
-        event.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-        mobilePanel.classList.remove("open");
-        menuBtn.setAttribute("aria-expanded", "false");
+    document.querySelectorAll('a[href^="#"]').forEach(link=>{
+      link.addEventListener('click', e=>{
+        const target = document.querySelector(link.getAttribute('href'));
+        if(!target) return;
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+        mobile.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
       });
     });
 
-    document.querySelectorAll(".ask-btn").forEach(button => {
-      button.addEventListener("click", () => {
-        const product = button.dataset.product || "";
-        document.getElementById("product").value = product;
-        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-        document.getElementById("name").focus({ preventScroll: true });
-        showToast(`تم اختيار ${product} — أكمل بيانات الاستفسار.`);
+    const filters = document.querySelectorAll('.filter');
+    const cards = document.querySelectorAll('.card');
+    filters.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const value = btn.dataset.filter;
+        filters.forEach(f=>{
+          f.classList.remove('active');
+          f.setAttribute('aria-pressed','false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed','true');
+        cards.forEach(card=>{
+          card.hidden = !(value === 'all' || card.dataset.category === value);
+        });
       });
     });
 
-    document.getElementById("contact-form").addEventListener("submit", event => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      const name = String(form.get("name") || "").trim();
-      const phone = String(form.get("phone") || "").trim();
-      const product = String(form.get("product") || "").trim() || "لم يحدد نوع الخشب";
-      const message = String(form.get("message") || "").trim();
+    document.querySelectorAll('.ask').forEach(button=>{
+      button.addEventListener('click', ()=>{
+        const product = button.dataset.name || '';
+        document.getElementById('product').value = product;
+        document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+        setTimeout(()=>document.getElementById('name').focus({preventScroll:true}), 250);
+      });
+    });
 
-      if (!name || !phone || !message) {
-        showToast("من فضلك أكمل الاسم ورقم الهاتف وتفاصيل الاستفسار.");
+    document.getElementById('contact-form').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const fd = new FormData(e.currentTarget);
+      const name = String(fd.get('name') || '').trim();
+      const phone = String(fd.get('phone') || '').trim();
+      const product = String(fd.get('product') || '').trim() || 'لم يحدد نوع الشغل';
+      const message = String(fd.get('message') || '').trim();
+      if(!name || !phone || !message){
+        document.getElementById('form-status').textContent = 'من فضلك أكمل الاسم ورقم الهاتف وتفاصيل الطلب.';
+        document.getElementById('form-status').classList.add('show');
         return;
       }
-      if (!WHATSAPP_NUMBER || WHATSAPP_NUMBER.includes("X")) {
-        const feedback = document.getElementById("form-message");
-        feedback.textContent = "النموذج جاهز، لكن يجب وضع رقم واتساب الصحيح داخل متغير WHATSAPP_NUMBER في الكود قبل استقبال الرسائل.";
-        feedback.classList.add("show");
-        showToast("أضف رقم واتساب الصحيح لتفعيل إرسال الرسائل.");
-        return;
-      }
-      const text = `استفسار من موقع مالك للأخشاب الفاخرة%0Aالاسم: ${encodeURIComponent(name)}%0Aرقم الهاتف: ${encodeURIComponent(phone)}%0Aالنوع المطلوب: ${encodeURIComponent(product)}%0Aالتفاصيل: ${encodeURIComponent(message)}`;
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank", "noopener,noreferrer");
-      const feedback = document.getElementById("form-message");
-      feedback.textContent = "تم تجهيز رسالتك في واتساب. اضغط إرسال من داخل واتساب لإتمام التواصل.";
-      feedback.classList.add("show");
+      const text = 'استفسار جديد من موقع SM Furniture%0A'
+        + 'الاسم: ' + encodeURIComponent(name) + '%0A'
+        + 'رقم الهاتف: ' + encodeURIComponent(phone) + '%0A'
+        + 'نوع الشغل: ' + encodeURIComponent(product) + '%0A'
+        + 'التفاصيل: ' + encodeURIComponent(message);
+      window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text, '_blank', 'noopener,noreferrer');
+      const status = document.getElementById('form-status');
+      status.textContent = 'تم تجهيز رسالتك على واتساب. اضغط إرسال من داخل واتساب لإتمام التواصل.';
+      status.classList.add('show');
     });
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
